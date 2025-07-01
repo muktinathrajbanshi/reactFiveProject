@@ -1,67 +1,67 @@
 const Menu = [
     {
         id: 1,
-        image: "",
+        image: "images/maggi.png",
         name: "maggi",
-        category: "lunch",
+        category: "breakfast",
         price: 25,
         description: "maggi has fantastic taste"
     },
     {
         id: 2,
-        image: "",
-        name: "maggi",
-        category: "lunch",
-        price: 25,
-        description: "maggi has fantastic taste"
+        image: "../images/allupakoida.png",
+        name: "allu pakoida",
+        category: "evening",
+        price: "Rs. 50",
+        description: "allupakoida has fantastic taste"
     },
     {
         id: 3,
-        image: "",
-        name: "maggi",
-        category: "lunch",
-        price: 25,
-        description: "maggi has fantastic taste"
+        image: "images/corn.png",
+        name: "corn",
+        category: "breakfast",
+        price: "Rs.35",
+        description: "corn has fantastic taste"
     },
     {
         id: 4,
-        image: "",
-        name: "maggi",
+        image: "../images/chola.png",
+        name: "chola",
         category: "lunch",
-        price: 25,
-        description: "maggi has fantastic taste"
+        price: "Rs. 50",
+        description: "chola has fantastic taste"
     },
     {
         id: 5,
-        image: "",
-        name: "maggi",
-        category: "lunch",
-        price: 25,
-        description: "maggi has fantastic taste"
+        image: "../images/pizza.png",
+        name: "pizza",
+        category: "evening",
+        price: "Rs.80",
+        description: "pizza has fantastic taste"
     },
     {
         id: 6,
-        image: "",
-        name: "maggi",
-        category: "lunch",
-        price: 25,
-        description: "maggi has fantastic taste"
+        image: "../images/nonvegthali.png",
+        name: "Non-Veg Thali",
+        category: "dinner",
+        price: "Rs.180",
+        description: "Non veg thali has fantastic taste"
     },
     {
         id: 7,
-        image: "",
-        name: "maggi",
-        category: "lunch",
-        price: 25,
-        description: "maggi has fantastic taste"
+        image: "../images/sweet.png",
+        name: "Sweets",
+        category: "dinner",
+        price: "Rs.60",
+        description: "sweets has fantastic taste"
     },
     {
         id: 8,
-        image: "",
-        name: "maggi",
-        category: "lunch",
-        price: 25,
-        description: "maggi has fantastic taste"
+        image: "../images/rajmarice.png",
+        name: "Rajma Rice",
+        category: "dinner",
+        price: "Rs.80",
+        description: "Rajma Rice has fantastic taste"
     },
     {
         id: 9,
