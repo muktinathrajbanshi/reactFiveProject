@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Resturant from './component/Basics/Resturant';
 
 const App = () => {
   return (
-    <div>
-      <h1>Hello Muktinath, Welcome to new Future!</h1>
-    </div>
+    <>
+      <Resturant />
+    </>
   )
 }
 
