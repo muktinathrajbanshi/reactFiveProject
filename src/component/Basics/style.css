@@ -110,3 +110,28 @@
   color: var(--text-color);
   cursor: pointer;
 }
+
+/* for responsive purpose */
+
+@media (max-width: 1024px) {
+  .card-container {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    width: 100%; /* Full width on very small screens */
+  }
+
+  .card-container .card .card-tag {
+    margin-left: 15rem;
+    width: 25%;
+  }
+}
