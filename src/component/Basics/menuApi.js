@@ -5,7 +5,7 @@ const Menu = [
         name: "maggi",
         category: "breakfast",
         price: 25,
-        description: "maggi has fantastic taste"
+        description: "Maggi is a popular instant noodle brand loved for its quick preparation and delicious taste. It's a favorite comfort food, especially among students and busy individuals. Versatile and easy to cook, Maggi is enjoyed across all age groups worldwide."
     },
     {
         id: 2,
@@ -65,7 +65,7 @@ const Menu = [
     },
     {
         id: 9,
-        image: "../images/somosa.png",
+        image: "../images/samosa.png",
         name: "samosa",
         category: "evening",
         price: "Rs.25",
