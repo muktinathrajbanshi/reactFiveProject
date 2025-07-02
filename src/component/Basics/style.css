@@ -9,11 +9,18 @@
 }
 
 .main-card--container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
   margin: 1rem;
 }
 
 .card-container {
-  margin: 1rem;
+  width: 30%; /* roughly 3 cards per row */
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
 }
 
 .card {
@@ -21,9 +28,10 @@
   justify-content: center;
   flex-direction: column;
   background-color: #fff;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  width: 33%;
-  height: 50%;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  margin: 1rem;
 }
 
 .card .card-body {
@@ -63,12 +71,12 @@
   display: grid;
   place-items: center;
   color: var(--text-color);
+  margin-bottom: 0.5rem;
 }
 
 .card .card-body .card-author {
   font-size: 1.2rem;
   text-transform: uppercase;
-  padding-top: 0.5rem;
   color: var(--text-color);
 }
 
@@ -77,10 +85,10 @@
   letter-spacing: 1px;
   text-transform: capitalize;
   font-weight: lighter;
+  margin-bottom: 0.5rem;
 }
 
 .card .card-body .card-description {
-  width: 100%;
   color: var(--text-color);
 }
 
@@ -89,18 +97,16 @@
   height: 45%;
   object-fit: cover;
   padding: 1rem;
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
 }
 
-.card-container .card .card-body .card-tag {
-  width: 5%;
+.card-container .card .card-tag {
+  width: 20%;
   height: 23px;
-  margin-left: 23rem;
+  margin-bottom: 1rem;
+  display: grid;
+  justify-items: center;
+  margin-left: 20rem;
   border: 2px solid grey;
   color: var(--text-color);
-  background-color: red;
+  cursor: pointer;
 }
