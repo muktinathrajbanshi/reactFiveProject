@@ -72,3 +72,5 @@ const Menu = [
         description: "maggi has fantastic taste"
     },
 ];
+
+export default Menu;
