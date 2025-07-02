@@ -19,7 +19,10 @@ const MenuCard = ({menuData}) => {
                                 <span className="card-description subtle">
                                 {curElem.description}
                                 </span>
-                                <div className="card-read">Read</div>
+                                <div className="card-read">
+                                 <span className="line"></span>
+                                 <span className="read-text">Read</span>
+                                </div>
                             </div>
                             <img src={curElem.image} alt="images" className="card-media" />
                             <span className="card-tag subtle">Order Now</span>
