@@ -74,7 +74,7 @@ const Menu = [
      {
         id: 10,
         image: "../images/samosa.png",
-        name: "samosa",
+        name: "capachino",
         category: "capachino",
         price: "Rs.25",
         description: "Samosa is a popular Indian snack with a crispy, golden crust filled with spiced potatoes, peas, or meat. Triangular in shape, it's deep-fried and served with chutney. Samosas are loved for their savory taste and are enjoyed across cultures."

@@ -34,6 +34,7 @@
   outline: none;
   font-weight: bold;
   width: 4rem;
+  text-transform: capitalize;
   border-bottom: 3px solid transparent;
   transition: 0.3s ease;
   -webkit-transition: 0.3s ease;
@@ -172,5 +173,12 @@
   .card-container .card .card-tag {
     margin-left: 15rem;
     width: 25%;
+  }
+
+  .navbar .btn-group {
+    width: 90%;
+    height: 3rem;
+    gap: 7px;
+    padding-left: 7px;
   }
 }
