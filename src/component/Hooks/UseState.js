@@ -11,14 +11,14 @@ const UseState = () => {
                 <span></span>
                 <span></span>
                 <span></span>
-                HOVER ME
+                INCR
             </div>
             <div className="button2">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
-                HOVER ME
+                DECR
             </div>
         </div>
     </>
