@@ -16,7 +16,7 @@ const UseReducer = () => {
     
     // const[myNum, setMyNum] = useState(0);
 
-    const[state, dispatch] = useReducer(reducer, 10);
+    const[state, dispatch] = useReducer(reducer, 0);
 
   return (
     <>
