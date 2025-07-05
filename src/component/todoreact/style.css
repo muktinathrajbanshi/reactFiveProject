@@ -5,6 +5,10 @@
   background-color: #130f40;
 }
 
+:root {
+  --text-color: #535c68;
+}
+
 .main-div {
   display: flex;
   justify-content: center;
@@ -48,8 +52,16 @@
   height: 2.3rem;
   padding-left: 0.5rem;
   background-color: #fff;
+  color: var(--text-color);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .addItems i {
   margin-left: -1.4rem;
+  background-color: #fff;
+  color: var(--text-color);
 }
