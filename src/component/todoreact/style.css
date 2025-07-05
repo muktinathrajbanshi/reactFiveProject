@@ -65,3 +65,56 @@
   background-color: #fff;
   color: var(--text-color);
 }
+
+.child-div .showItems {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.child-div .showItems .btn.effect04 {
+  position: relative;
+  width: 9rem;
+  height: 2.5rem;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.showItems span {
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+.child-div .showItems .btn.effect04 span {
+  font-size: 0.8rem;
+  background-color: #fff;
+}
+
+.child-div .showItems .btn.effect04:hover {
+  transition: all 0.3s;
+  background-color: #1b1464;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+.child-div .showItems .btn.effect04:hover span {
+  opacity: 0;
+}
+
+.child-div .showItems .btn.effect04::after {
+  content: attr(data-sm-link-text);
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: white;
+  text-transform: uppercase;
+}
+
+.child-div .showItems .btn.effect04:hover::after {
+  opacity: 1;
+  color: #fff;
+}
