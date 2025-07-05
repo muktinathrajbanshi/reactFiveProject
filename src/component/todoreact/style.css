@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #130f40;
+}
+
+.main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-div .child-div {
+  width: 30%;
+  height: 50vh;
+  margin: 5rem 5rem 5rem 7rem;
+}
+
+.child-div figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.child-div img {
+  width: 24%;
+  height: 37%;
+}
+
+.child-div figcaption {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  font-weight: lighter;
+  color: #fff;
+}
+
+.main-div .addItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.addItems .form-control {
+  width: 22rem;
+  height: 2.3rem;
+  padding-left: 0.5rem;
+  background-color: #fff;
+}
+
+.addItems i {
+  margin-left: -1.4rem;
+}

@@ -12,6 +12,7 @@ const todo = () => {
                 </figure>
                 <div className="addItems">
                     <input type="text" placeholder="✍️ Add Item" className="form-control" />
+                    <i class="fa-solid fa-plus"></i>
                 </div>
             </div>
         </div>
