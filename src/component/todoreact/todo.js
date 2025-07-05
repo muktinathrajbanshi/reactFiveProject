@@ -14,6 +14,16 @@ const todo = () => {
                     <input type="text" placeholder="✍️ Add Item" className="form-control" />
                     <i class="fa-solid fa-plus"></i>
                 </div>
+
+                <div className="showItems">
+                    <div className="eachItem">
+                        <h3>apple</h3>
+                        <div className="todo-btn">
+                            <i class="fa-solid fa-plus"></i>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
                 <div className="showItems">
                     <button className="btn effect04" data-sm-link-text="Remove All">
                        <span>CHECK LIST</span> 

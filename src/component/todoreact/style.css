@@ -72,6 +72,33 @@
   margin-top: 1rem;
 }
 
+.showItems .eachItem {
+  width: 22rem;
+  height: 2.3rem;
+  margin-left: 0.5rem;
+  background-color: #0652dd;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.eachItem h3 {
+  background-color: transparent;
+}
+
+.todo-btn i {
+  background-color: #0652dd;
+}
+
 .child-div .showItems .btn.effect04 {
   position: relative;
   width: 9rem;
