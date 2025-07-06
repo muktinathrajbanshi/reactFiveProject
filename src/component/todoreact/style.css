@@ -64,6 +64,7 @@
   margin-left: -1.4rem;
   background-color: #fff;
   color: var(--text-color);
+  cursor: pointer;
 }
 
 .child-div .showItems {
@@ -97,6 +98,33 @@
   margin-left: 18rem;
   display: flex;
   gap: 1rem;
+}
+
+.showItems .eachItem:hover {
+  background-color: #fff;
+}
+
+.showItems .eachItem:hover h3 {
+  color: #000;
+}
+
+.showItems .eachItem:hover i:first-child {
+  background-color: transparent;
+  color: green;
+}
+
+.showItems .eachItem:hover i:last-child {
+  background-color: transparent;
+  color: red;
+}
+
+.showItems .eachItem i:hover {
+  cursor: pointer;
+  transition: 0.3s all;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  -o-transition: 0.3s all;
 }
 
 .eachItem h3 {
