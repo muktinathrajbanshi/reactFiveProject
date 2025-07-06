@@ -67,9 +67,16 @@
   cursor: pointer;
 }
 
+.addItems i:hover {
+  background-color: transparent;
+  color: #079992;
+}
+
 .child-div .showItems {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-top: 1rem;
 }
 
@@ -77,6 +84,7 @@
   width: 22rem;
   height: 2.3rem;
   margin-left: 0.5rem;
+  margin-top: 0.5rem;
   background-color: #0652dd;
   color: #fff;
   display: flex;
@@ -139,6 +147,7 @@
   position: relative;
   width: 9rem;
   height: 2.5rem;
+  margin-top: -0.1rem;
   background-color: #fff;
   cursor: pointer;
 }

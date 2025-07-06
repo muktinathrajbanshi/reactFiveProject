@@ -1,7 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./style.css";
 
-const todo = () => {
+const Todo = () => {
+    const [inputData, setInputData] = useState("");
+    const [items, setItems] = useState([]);
+
+    // add the items function
+    const addItem = () => {
+        if(!inputData) {
+            alert("plz fill the data");
+        } else {
+            setItems([... items, inputData]);
+            setInputData("");
+        }
+    };
+
   return (
     <>
         <div className="main-div">
@@ -11,18 +24,30 @@ const todo = () => {
                     <figcaption>Add Your List Here ✌️</figcaption>
                 </figure>
                 <div className="addItems">
-                    <input type="text" placeholder="✍️ Add Item" className="form-control" />
-                    <i class="fa-solid fa-plus"></i>
+                    <input
+                     type="text" 
+                     placeholder="✍️ Add Item" 
+                     className="form-control" 
+                     value={inputData}
+                     onChange={(event) => setInputData(event.target.value)}
+                     />
+                    <i class="fa-solid fa-plus" onClick={addItem}></i>
                 </div>
 
                 <div className="showItems">
-                    <div className="eachItem">
-                        <h3>apple</h3>
-                        <div className="todo-btn">
-                            <i class="fa-solid fa-pen-to-square"></i>
-                            <i class="fa-solid fa-trash-can"></i>
-                        </div>
-                    </div>
+                    {
+                        items.map((curElem, index) => {
+                            return (
+                                    <div className="eachItem" key={index}>
+                                        <h3>{curElem}</h3>
+                                        <div className="todo-btn">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </div>
+                                    </div>
+                            );
+                        })
+                    }
                 </div>
                 <div className="showItems">
                     <button className="btn effect04" data-sm-link-text="Remove All">
@@ -32,7 +57,7 @@ const todo = () => {
             </div>
         </div>
     </>
-  )
-}
+  );
+};
 
-export default todo;
+export default Todo;
