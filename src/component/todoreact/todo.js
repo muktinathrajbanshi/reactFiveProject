@@ -10,9 +10,22 @@ const Todo = () => {
         if(!inputData) {
             alert("plz fill the data");
         } else {
-            setItems([... items, inputData]);
+            const myNewInputData = {
+                id: new Date().getTime().toString(),
+                name: inputData,
+            }
+            setItems([... items, myNewInputData]);
             setInputData("");
         }
+    };
+
+    // helete items section
+
+    const deleteItem = (index) => {
+        const updatedItems = items.filter((curElem) => {
+            return curElem.id !== index;
+        });
+        setItems(updatedItems);
     };
 
   return (
@@ -36,13 +49,13 @@ const Todo = () => {
 
                 <div className="showItems">
                     {
-                        items.map((curElem, index) => {
+                        items.map((curElem) => {
                             return (
-                                    <div className="eachItem" key={index}>
-                                        <h3>{curElem}</h3>
+                                    <div className="eachItem" key={curElem.id}>
+                                        <h3>{curElem.name}</h3>
                                         <div className="todo-btn">
                                             <i class="fa-solid fa-pen-to-square"></i>
-                                            <i class="fa-solid fa-trash-can"></i>
+                                            <i class="fa-solid fa-trash-can" onClick={() => deleteItem(curElem.id)}></i>
                                         </div>
                                     </div>
                             );
