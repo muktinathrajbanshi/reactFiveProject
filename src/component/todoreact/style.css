@@ -91,6 +91,14 @@
   overflow: hidden;
 }
 
+.eachItem .todo-btn {
+  position: absolute;
+  background-color: transparent;
+  margin-left: 18rem;
+  display: flex;
+  gap: 1rem;
+}
+
 .eachItem h3 {
   background-color: transparent;
 }

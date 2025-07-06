@@ -19,8 +19,8 @@ const todo = () => {
                     <div className="eachItem">
                         <h3>apple</h3>
                         <div className="todo-btn">
-                            <i class="fa-solid fa-plus"></i>
-                            <i class="fa-solid fa-plus"></i>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash-can"></i>
                         </div>
                     </div>
                 </div>
