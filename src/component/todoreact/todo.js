@@ -15,11 +15,25 @@ const getLocalData = () => {
 const Todo = () => {
     const [inputData, setInputData] = useState("");
     const [items, setItems] = useState(getLocalData());
+    const [isEditItem, setIsEditItem] = useState("");
+    const [toggleButton, setToggleButton] = useState(false);
 
     // add the items function
     const addItem = () => {
         if(!inputData) {
             alert("plz fill the data");
+        } else if (inputData && toggleButton) {
+            setItems(
+                items.map((curElem) => {
+                    if(curElem.id === isEditItem){
+                        return{... curElem, name: inputData};
+                    }
+                    return curElem;
+                })
+            );
+            setInputData("");
+            setIsEditItem(null);
+            setToggleButton(false);
         } else {
             const myNewInputData = {
                 id: new Date().getTime().toString(),
@@ -30,7 +44,18 @@ const Todo = () => {
         }
     };
 
-    // helete items section
+    // edit the items
+    const editItem = (index) => {
+        const item_todo_edited = items.find((curElem) => {
+            return curElem.id === index;
+        });
+
+        setInputData(item_todo_edited.name);
+        setIsEditItem(index);
+        setToggleButton(true);
+    };
+
+    // delete items section
 
     const deleteItem = (index) => {
         const updatedItems = items.filter((curElem) => {
@@ -66,7 +91,12 @@ const Todo = () => {
                      value={inputData}
                      onChange={(event) => setInputData(event.target.value)}
                      />
-                    <i class="fa-solid fa-plus" onClick={addItem}></i>
+                     {toggleButton ? (
+                        <i class="fa-solid fa-pen-to-square" onClick={addItem}></i>
+                        ) : (
+                            <i class="fa-solid fa-plus" onClick={addItem}></i>
+                        )}
+
                 </div>
 
                 <div className="showItems">
@@ -76,7 +106,7 @@ const Todo = () => {
                                     <div className="eachItem" key={curElem.id}>
                                         <h3>{curElem.name}</h3>
                                         <div className="todo-btn">
-                                            <i class="fa-solid fa-pen-to-square"></i>
+                                            <i class="fa-solid fa-pen-to-square" onClick={() => editItem(curElem.id)}></i>
                                             <i class="fa-solid fa-trash-can" onClick={() => deleteItem(curElem.id)}></i>
                                         </div>
                                     </div>
