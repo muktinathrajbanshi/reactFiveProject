@@ -102,24 +102,31 @@ body {
   border-top-right-radius: 1.5rem;
 }
 
-.width .weatherInfo {
+.width .weatherInfovsDate {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 55%;
-  height: 9rem;
+  width: 100%;
+  border: 1px solid red;
+}
+
+.weatherInfovsDate .weatherInfo {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  height: 6rem;
   border: 1px solid red;
   gap: 2rem;
   background-color: #000;
 }
 
-.width .weatherInfo .temperature {
+.weatherInfovsDate .weatherInfo .temperature {
   font-size: 2rem;
-  margin-left: -3rem;
+  margin-left: 1rem;
   color: #fff;
 }
 
-.width .weatherInfo .description {
+.weatherInfovsDate .weatherInfo .description {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -134,4 +141,17 @@ body {
 
 .weatherInfo .description .place {
   text-transform: capitalize;
+}
+
+.weatherInfovsDate .date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  font-size: 1.9rem;
+  width: 30%;
+  height: 6rem;
+  /* border: 1px solid red; */
+  background-color: #1abc9c;
+  color: #fff;
 }

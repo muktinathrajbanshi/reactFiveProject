@@ -22,16 +22,20 @@ const Temp = () => {
             <div className="weatherIcon">
                 <i className={"wi wi-day-sunny"}></i>
             </div>
-            <div className="weatherInfo">
-                <div className="temperature">
-                    <span>25.5&deg;</span>
+            <div className="weatherInfovsDate">
+                <div className="weatherInfo">
+                    <div className="temperature">
+                        <span>25.5&deg;</span>
+                    </div>
+                    <div className="description">
+                        <div className="weatherCondition">sunny </div>
+                        <div className="place">pune, India</div>
+                    </div>
                 </div>
-                <div className="description">
-                    <div className="weatherCondition">sunny </div>
-                    <div className="place">pune, India</div>
+                <div className="date">
+                    { new Date().toLocaleString()} 
                 </div>
             </div>
-            <div className="date"> { new Date().toLocaleDateString()} </div>
             {/* our 4 column section */}
             <div className="extra-temp">
                 <div className="temp-info-minmax">
