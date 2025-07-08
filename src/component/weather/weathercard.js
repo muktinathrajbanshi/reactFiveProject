@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { use, useEffect, useState } from 'react'
 
 const Weathercard = ({tempInfo}) => {
+    const [weatherState, setWeatherState] = React.useState("");
 
     const {
                 temp, 
@@ -13,6 +14,29 @@ const Weathercard = ({tempInfo}) => {
                 sunset,
             } = tempInfo;
 
+            useEffect(() => {
+                if(weathermood) {
+                    switch (weathermood) {
+                        case "Clouds": 
+                         setWeatherState("wi-day-cloudy");
+                         break;
+                        case "Haze": 
+                         setWeatherState("wi-fog");
+                         break;
+                        case "Clear": 
+                         setWeatherState("wi-day-Sunny");
+                         break; 
+                         case "Rain": 
+                         setWeatherState("wi-rain-mix");
+                         break; 
+
+                         default:
+                          setWeatherState("wi-day-Sunny"); 
+                          break;
+                    }
+                }
+            }, [weathermood]);
+
             // converting the seconds into time
             let sec = sunset;
             let date = new Date( sec * 1000);
@@ -22,7 +46,7 @@ const Weathercard = ({tempInfo}) => {
     <>
       <article className="width">
             <div className="weatherIcon">
-                <i className={"wi wi-day-sunny"}></i>
+                <i className={`wi ${weatherState}`}></i>
             </div>
             <div className="weatherInfovsDate">
                 <div className="weatherInfo">
@@ -30,7 +54,7 @@ const Weathercard = ({tempInfo}) => {
                         <span>{temp}&deg;</span>
                     </div>
                     <div className="description">
-                        <div className="weatherCondition">sunny </div>
+                        <div className="weatherCondition">{weathermood}</div>
                         <div className="place">{name}, {country}</div>
                     </div>
                 </div>
