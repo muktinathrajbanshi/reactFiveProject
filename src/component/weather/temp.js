@@ -47,7 +47,7 @@ const Temp = () => {
     <>
       <div className="wrap">
         <div className="search">
-            <input type="search"
+            <input
                 placeholder="search..."
                 autoFocus
                 id="search"
