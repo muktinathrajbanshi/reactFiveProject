@@ -92,8 +92,8 @@ body {
 
 .width .weatherIcon {
   width: 100%;
-  height: 60%;
-  border: 1px solid red;
+  height: 30%;
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,21 +107,20 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  border: 1px solid red;
+  margin-top: 1rem;
 }
 
 .weatherInfovsDate .weatherInfo {
   display: flex;
   align-items: center;
   width: 70%;
-  height: 6rem;
-  border: 1px solid red;
+  height: 9rem;
   gap: 2rem;
   background-color: #000;
 }
 
 .weatherInfovsDate .weatherInfo .temperature {
-  font-size: 2rem;
+  font-size: 4rem;
   margin-left: 1rem;
   color: #fff;
 }
@@ -135,7 +134,9 @@ body {
 }
 
 .weatherInfo .description .weatherCondition {
-  font-size: 1.7rem;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -150,8 +151,60 @@ body {
   padding: 0 1rem;
   font-size: 1.9rem;
   width: 30%;
-  height: 6rem;
-  /* border: 1px solid red; */
+  height: 9rem;
   background-color: #1abc9c;
   color: #fff;
+}
+
+.width .extra-temp {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.extra-temp .temp-info-minmax {
+  width: 50%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.temp-info-minmax .two-sided-section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  height: 4rem;
+}
+
+.two-sided-section i {
+  font-size: 1.5rem;
+  color: #1abc9c;
+}
+
+.two-sided-section .extra-info-leftside {
+  font-weight: 600;
+}
+
+.extra-temp .weather-extra-info {
+  width: 50%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.weather-extra-info .two-sided-section {
+  width: 50%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
 }
