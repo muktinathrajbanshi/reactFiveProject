@@ -28,3 +28,46 @@ body {
   display: grid;
   place-items: center;
 }
+
+.wrap {
+  margin-top: -8rem;
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin-left: -3rem;
+}
+
+.search .searchTerm {
+  width: 16rem;
+  height: 2rem;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  font-weight: lighter;
+  padding-left: 1rem;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.search .searchButton {
+  width: 6rem;
+  height: 2rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: lighter;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: #16a085;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
